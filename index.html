@@ -75,19 +75,6 @@
 
     <script src="js/bandesCouleur.js"></script>
     <script src="js/visualisationApplication.js"></script>
-    <script>
-        (function() {
-            for (let e of document.querySelectorAll("input[type='checkbox']")) {
-                e.addEventListener("change", function() {
-
-                    for (let i of document.querySelectorAll(`div[class=${e.value}]`)) {
-                        i.style.display = (e.checked) ? "flex" : "none";
-                    }
-
-
-                });
-            }
-        })()
-    </script>
+    <script src="js/triMedias.js"></script>
 </body>
 </html>
