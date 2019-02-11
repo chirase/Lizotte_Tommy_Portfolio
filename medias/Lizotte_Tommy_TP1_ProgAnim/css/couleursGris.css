@@ -1,0 +1,28 @@
+body {
+        background-color:gray;
+     }
+
+		section {
+			background-color: darkgray;
+}
+
+footer{
+    
+    background-color:gray;
+    color:white;
+}
+
+.boutonBurger{
+    background: linear-gradient(to bottom, #3b3c3d 0%, #3b3c3d 20%, transparent 20%, transparent 40%, #3b3c3d 40%, #3b3c3d 60%, transparent 60%, transparent 80%, #3b3c3d 80%, #3b3c3d 100%);
+    
+}
+
+.boutonBurger:hover{
+    background: linear-gradient(to bottom, black 0%, black 20%, transparent 20%, transparent 40%, black 40%, black 60%, transparent 60%, transparent 80%, black 80%, black 100%);
+    
+}
+
+
+.menu{
+    background-color:#3b3c3d;
+}

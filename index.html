@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portefolio Tommy</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <main>
+
+        <img class="logo" src="medias/autoportrait.jpg"></img>
+        <header>
+            <h1><i>Tommy Lizotte :  Intégrateur en Multimédia</i> </h1>
+        </header>
+        <aside>
+            <h3>Trier le contenu</h3>
+            <label>Programmation <input type="checkbox" checked value="Programmation"></label><label>Modélisation 3D <input disabled type="checkbox" checked value="3d"></label><label>Infographie <input checked type="checkbox" value="Infographie"></label>
+            <h3>Me contacter</h3>
+            <label>tommyt.l@hotmail.com</label>            <label>514-629-7739</label>
+
+        </aside>
+        <section>
+            <div class="Programmation" data-src="medias/Lizotte_Tommy_TP5/index.html"><img src="medias/Lizotte_Tommy_TP5/images/logo_Petit.png">
+            </div>
+
+            <div class="Programmation" data-src="medias/Lizotte_Tommy_TP1_ProgAnim/index.html"><img src="medias/Lizotte_Tommy_TP1_ProgAnim/img/toute.png">
+            </div>
+            <div class="Programmation" data-src="medias/Lizotte_Tommy_TP/index.html"><img src="medias/Lizotte_Tommy_TP/medias/img/titre.png">
+            </div>
+
+
+            <div class="Infographie">
+                <img src="medias/general.jpg" />
+                <caption>Général</caption>
+            </div>
+            <div class="Infographie">
+                <img src="medias/Jeu.jpg" />
+            </div>
+            <div class="Infographie">
+                <img src="medias/logo.png" />
+            </div>
+            <div class="Infographie">
+                <img src="medias/perso.gif" />
+            </div>
+            <div class="Infographie">
+                <img src="medias/Lizotte_Tommy.jpg" />
+            </div>
+
+            <div class="Infographie">
+                <img src="medias/rat.png" />
+            </div>
+
+
+        </section>
+    </main>
+
+    <div id="background"></div>
+    <div id="lecteur" style="display:none;">
+        <div id="stop">X</div>
+        <iframe></iframe>
+    </div>
+
+    <script src="js/bandesCouleur.js"></script>
+    <script src="js/visualisationApplication.js"></script>
+    <script>
+        (function() {
+            for (let e of document.querySelectorAll("input[type='checkbox']")) {
+                e.addEventListener("change", function() {
+
+                    for (let i of document.querySelectorAll(`div[class=${e.value}]`)) {
+                        i.style.display = (e.checked) ? "flex" : "none";
+                    }
+
+
+                });
+            }
+        })()
+    </script>
+</body>
+</html>
