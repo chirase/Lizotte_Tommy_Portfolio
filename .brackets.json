@@ -3,8 +3,8 @@
     "sass.compiler": "libsass",
     "path": {
         "scss/styles.scss": {
-            "sass.enabled": true, 
-            "sass.options": {                
+            "sass.enabled": true,
+            "sass.options": {
                 "outputDir": "../css/",
                 "imagePath": null,
                 "sourceComments": false,
