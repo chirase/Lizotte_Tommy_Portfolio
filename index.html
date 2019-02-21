@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Portefolio Tommy</title>
+    
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/mobile.css" />
 </head>
 
 <body>
 
     <main>
 
-        <img class="logo" src="medias/autoportrait.jpg"></img>
+        <img class="logo" src="medias/autoportrait.jpg" alt="logo">
         <header>
-            <h1><i>Tommy Lizotte :  Intégrateur en Multimédia</i> </h1>
+            <h1><i>Tommy Lizotte : Intégrateur en Multimédia</i> </h1>
         </header>
         <aside>
-            <h3>Trier le contenu</h3>
-            <label>Programmation <input type="checkbox" checked value="Programmation"></label><label>Modélisation 3D <input  type="checkbox" checked value="Modelisation"></label><label>Infographie <input checked type="checkbox" value="Infographie"></label>
-            <h3>Me contacter</h3>
-            <label>tommyt.l@hotmail.com</label>            <label>514-629-7739</label>
-
+            <div>
+                <h3>Catégories</h3>
+                <label class="boutonCocher" for="prog">Programmation <input id="prog" type="checkbox" checked value="Programmation"></label>
+                
+                <label class="boutonCocher" for="model">Modélisation 3D <input id="model" type="checkbox" checked value="Modelisation"></label>
+                
+                <label class="boutonCocher" for="info">Infographie <input id="info" checked type="checkbox" value="Infographie"></label>
+                
+            </div>
+            
+            
+                <p>Me contacter : (514)-629-7739 tommyt.l@hotmail.com </p>
+            
         </aside>
         <section>
-            <div class="Programmation" data-src="medias/Lizotte_Tommy_TP5/index.html"><img src="medias/Lizotte_Tommy_TP5/images/logo_Petit.png">
+            <div class="Programmation" data-src="medias/Lizotte_Tommy_TP5/index.html"><img src="medias/Lizotte_Tommy_TP5/images/logo_Petit.png" alt="Logo petit">
             </div>
 
             <div class="Programmation" data-src="medias/Lizotte_Tommy_TP1_ProgAnim/index.html"><img src="medias/Lizotte_Tommy_TP1_ProgAnim/img/toute.png">
@@ -53,15 +63,16 @@
             </div>
 
             <div class="Modelisation">
-            <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/0fe644fd79cb46f49965f7ecd0035ee0/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/0fe644fd79cb46f49965f7ecd0035ee0/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-</div></div>
-                            <div class="Modelisation">
+                </div>
+            </div>
+            <div class="Modelisation">
 
                 <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/8fe022e8c5b9486b9905dcb79b76b238/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-                                </div>
+                </div>
             </div>
 
         </section>
