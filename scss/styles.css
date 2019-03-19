@@ -190,56 +190,7 @@ aside p {
     right: 0;
     z-index: 12; }
 
-@media (max-width: 600px) {
-  main {
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 20%;
-    grid-template-rows: 15vh 15vh 70vh 0vh;
-    transition: 0.5s; }
-
-  .logo {
-    height: 100%; }
-
-  header h1 {
-    font-size: 1.9em;
-    margin-left: 20%;
-    width: 80%; }
-
-  aside {
-    grid-column: 1/4;
-    grid-row: 2/2;
-    margin: 0;
-    background-color: #383838;
-    border-top-right-radius: 0px;
-    display: flex;
-    justify-content: space-around; }
-    aside div {
-      display: flex;
-      justify-content: space-around;
-      cursor: pointer; }
-    aside label {
-      justify-content: space-around;
-      cursor: pointer;
-      margin-top: 8%;
-      height: 25px; }
-    aside input {
-      cursor: pointer; }
-    aside h3 {
-      display: none; }
-    aside p {
-      text-align: center;
-      margin-bottom: 30px;
-      border: none; }
-
-  section {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    display: flex;
-    flex-wrap: wrap;
-    overflow-y: scroll;
-    justify-content: space-between; } }
-@media (pointer: none), (pointer: coarse) {
+@media only screen and (max-width: 600px) {
   main {
     display: grid;
     width: 100vw;
