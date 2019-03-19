@@ -319,7 +319,7 @@ aside p {
 }
 
 @media (pointer:none), (pointer:coarse) {
-    #background {
+    .itemBack {
         display: none;
     }
     main {

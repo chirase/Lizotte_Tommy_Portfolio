@@ -240,7 +240,7 @@ aside p {
     overflow-y: scroll;
     justify-content: space-between; } }
 @media (pointer: none), (pointer: coarse) {
-  #background {
+  .itemBack {
     display: none; }
 
   main {
