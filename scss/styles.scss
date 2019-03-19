@@ -319,6 +319,9 @@ aside p {
 }
 
 @media (pointer:none), (pointer:coarse) {
+    #background {
+        display: none;
+    }
     main {
         display: grid;
         width: 100vw;
