@@ -217,20 +217,23 @@ aside p {
     aside div {
       display: flex;
       justify-content: space-around;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-top: -5vh; }
     aside label {
       justify-content: space-around;
       cursor: pointer;
-      margin-top: 8%;
-      height: 25px; }
+      height: 5vh;
+      line-height: 3em; }
     aside input {
       cursor: pointer; }
     aside h3 {
       display: none; }
     aside p {
       text-align: center;
-      margin-bottom: 30px;
-      border: none; }
+      position: absolute;
+      border: none;
+      left: 25vw;
+      top: 15vh; }
 
   section {
     grid-column: 1/4;
@@ -251,7 +254,10 @@ aside p {
     transition: 0.5s; }
 
   .logo {
-    height: 100%; }
+    height: 60%;
+    vertical-align: middle;
+    margin-top: 15%;
+    margin-left: 10%; }
 
   header h1 {
     font-size: 1.9em;
@@ -269,20 +275,24 @@ aside p {
     aside div {
       display: flex;
       justify-content: space-around;
-      cursor: pointer; }
+      cursor: pointer;
+      height: 100px; }
     aside label {
       justify-content: space-around;
       cursor: pointer;
-      margin-top: 8%;
-      height: 25px; }
+      height: 5vh;
+      line-height: 5em;
+      margin-top: -1vh; }
     aside input {
       cursor: pointer; }
     aside h3 {
       display: none; }
     aside p {
       text-align: center;
-      margin-bottom: 30px;
-      border: none; }
+      position: absolute;
+      border: none;
+      left: 30vw;
+      top: 15vh; }
 
   section {
     grid-column: 1/4;
